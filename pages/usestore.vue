@@ -19,7 +19,7 @@ export default defineComponent({
     const store = useStore();
     /*console.log('store', store);*/
     const { state, dispatch } = store;
-    /*console.log('state.counter', state.counter);*/
+    console.log('state.counter', state.counter);
     const counter = computed(() => state.counter);
     const increment = () => dispatch('increment');
 
