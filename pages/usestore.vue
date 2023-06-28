@@ -1,7 +1,6 @@
 <template>
   <div>
-    <h1>useStore() demo</h1>
-    <p>Importing from @nuxtjs/composition-api or #app</p>
+    <h1>Nuxt 2 store with Bridge demo</h1>
     <button type="button" @click="increment">
       Increment
     </button>
@@ -17,7 +16,6 @@ export default defineComponent({
   name: 'UseStore',
   setup() {
     const store = useStore();
-    /*console.log('store', store);*/
     const { state, dispatch } = store;
     console.log('state.counter', state.counter);
     const counter = computed(() => state.counter);
